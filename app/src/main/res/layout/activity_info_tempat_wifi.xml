@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical"
+    tools:context=".InfoTempatMakanActivity" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:id="@+id/header">
+
+        <TextView
+
+            android:gravity="center"
+            android:textSize="30dp"
+            android:id="@+id/namaTempatMakan"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#ff29aec1"
+            android:text="Nama Tempat WIFI"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/alamatTempatMakan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/namaTempatMakan"
+        android:layout_marginTop="30dp"
+        android:text="Alamat Tempat Wifi"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:textColor="#000000"
+        />
+    <Button
+        android:id="@+id/btnDirection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/alamatTempatMakan"
+        android:layout_marginTop="30dp"
+        android:background="#ff29aec1"
+        android:text="Get Direction"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        android:textColor="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnDirection"
+        android:layout_marginTop="10dp"
+        android:background="#ff29aec1"
+        android:text="Save Data"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        android:textColor="#FFFFFF"/>
+</LinearLayout>
